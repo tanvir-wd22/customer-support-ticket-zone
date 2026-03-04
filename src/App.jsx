@@ -27,7 +27,7 @@ function App() {
     // console.log(ticketItem);
     setInProgressCount(inProgessCount + 1);
     setStatus([...status, ticketItem]);
-    toast.success('Add to task status successfully');
+    toast.info('Add to task status successfully');
   };
   // console.log(status);
   const handleStatusCompleteClick = (ticketItem) => {

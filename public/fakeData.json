@@ -5,7 +5,7 @@
     "description": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
     "customer": "John Doe",
     "priority": "High Priority",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "3/4/2026"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Customer’s payment failed during checkout process. They tried again but the transaction still did not complete.",
     "customer": "Sarah Khan",
     "priority": "High Priority",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "3/3/2026"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Customer cannot log into their account dashboard. They reset the password but access is still denied.",
     "customer": "Michael Smith",
     "priority": "Medium Priority",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "3/2/2026"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Customer’s order was marked as delivered. They checked everywhere but the package was not received.",
     "customer": "Emily Johnson",
     "priority": "High Priority",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "3/1/2026"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Customer attempted to cancel their subscription plan. They submitted the request but charges continue monthly.",
     "customer": "Robert Brown",
     "priority": "High Priority",
-    "status": "In Progress",
+    "status": "Open",
     "createdAt": "2/26/2026"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Customer received a different product than ordered. They verified the invoice but item mismatch remains.",
     "customer": "Fatima Noor",
     "priority": "Medium Priority",
-    "status": "Resolved",
+    "status": "Open",
     "createdAt": "2/25/2026"
   },
   {
@@ -77,7 +77,7 @@
     "description": "Customer’s mobile app crashes on startup. They reinstalled the app but issue still persists.",
     "customer": "Daniel Wilson",
     "priority": "High Priority",
-    "status": "Open",
+    "status": "In Progress",
     "createdAt": "2/24/2026"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Customer is not receiving confirmation emails. They checked spam folder but no messages appear.",
     "customer": "Nusrat Jahan",
     "priority": "Medium Priority",
-    "status": "Closed",
+    "status": "Open",
     "createdAt": "2/23/2026"
   }
 ]

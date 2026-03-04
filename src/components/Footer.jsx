@@ -10,9 +10,9 @@ const Footer = () => {
         <nav>
           <h6 className="footer-title">CS - Ticket System</h6>
           <p className="text-sm leading-relaxed">
-            This CS Ticket System is a software tool
-            used to centralize, manage, and track customer inquiries from
-            various channels into a single dashboard.
+            This CS Ticket System is a software tool used to centralize, manage,
+            and track customer inquiries from various channels into a single
+            dashboard.
           </p>
         </nav>
 
@@ -61,7 +61,9 @@ const Footer = () => {
       {/* Bottom Footer */}
       <footer className="footer footer-center bg-neutral text-neutral-content p-4 border-t border-gray-700">
         <aside>
-          <p className="text-sm">© 2026 CS — Ticket System. All rights reserved.</p>
+          <p className="text-sm">
+            © 2026 CS — Ticket System. All rights reserved.
+          </p>
         </aside>
       </footer>
     </div>

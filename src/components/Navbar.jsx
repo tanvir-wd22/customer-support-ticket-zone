@@ -8,6 +8,9 @@ const Navbar = () => {
         <a>Blog</a>
       </li>
       <li>
+        <a>Download</a>
+      </li>
+      <li>
         <a>Contact</a>
       </li>
       <li>

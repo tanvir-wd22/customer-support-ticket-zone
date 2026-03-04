@@ -1,19 +1,18 @@
 const StatusCard = ({ ticketItem, handleStatusCompleteClick }) => {
   // console.log(ticketItem);
   const { title } = ticketItem;
+
   return (
     <div>
-      <div className="card bg-base-200 shadow-sm">
+      <div className="card bg-base-300 shadow-sm">
         <div className="card-body">
-          <h2 className="text-base font-medium">{title}</h2>
-          <div className="mt-2">
-            <button
-              onClick={() => handleStatusCompleteClick(ticketItem)}
-              className="btn btn-success btn-block"
-            >
-              Complete
-            </button>
-          </div>
+          <h2 className="text-md font-medium">{title}</h2>
+          <button
+            onClick={() => handleStatusCompleteClick(ticketItem)}
+            className="btn btn-sm btn-success btn-block"
+          >
+            Complete
+          </button>
         </div>
       </div>
     </div>
