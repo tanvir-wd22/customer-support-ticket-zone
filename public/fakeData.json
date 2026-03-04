@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Incorrect Billing Address",
+    "description": "Customer’s billing address shows a different city. They updated it but it still displays the old one.",
+    "customer": "John Doe",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "3/4/2026"
+  },
+  {
+    "id": 1002,
+    "title": "Payment Failed During Checkout",
+    "description": "Customer’s payment failed during checkout process. They tried again but the transaction still did not complete.",
+    "customer": "Sarah Khan",
+    "priority": "High Priority",
+    "status": "In Progress",
+    "createdAt": "3/3/2026"
+  },
+  {
+    "id": 1003,
+    "title": "Account Login Issue",
+    "description": "Customer cannot log into their account dashboard. They reset the password but access is still denied.",
+    "customer": "Michael Smith",
+    "priority": "Medium Priority",
+    "status": "Open",
+    "createdAt": "3/2/2026"
+  },
+  {
+    "id": 1004,
+    "title": "Order Not Delivered",
+    "description": "Customer’s order was marked as delivered. They checked everywhere but the package was not received.",
+    "customer": "Emily Johnson",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "3/1/2026"
+  },
+  {
+    "id": 1005,
+    "title": "Refund Not Processed",
+    "description": "Customer returned the purchased item recently. They expected a refund but no payment has been credited.",
+    "customer": "David Lee",
+    "priority": "High Priority",
+    "status": "In Progress",
+    "createdAt": "2/28/2026"
+  },
+  {
+    "id": 1006,
+    "title": "Profile Picture Upload Error",
+    "description": "Customer receives an error while uploading profile picture. They retried multiple times but it still fails.",
+    "customer": "Ayesha Rahman",
+    "priority": "Low Priority",
+    "status": "Open",
+    "createdAt": "2/27/2026"
+  },
+  {
+    "id": 1007,
+    "title": "Subscription Cancellation Issue",
+    "description": "Customer attempted to cancel their subscription plan. They submitted the request but charges continue monthly.",
+    "customer": "Robert Brown",
+    "priority": "High Priority",
+    "status": "In Progress",
+    "createdAt": "2/26/2026"
+  },
+  {
+    "id": 1008,
+    "title": "Incorrect Product Received",
+    "description": "Customer received a different product than ordered. They verified the invoice but item mismatch remains.",
+    "customer": "Fatima Noor",
+    "priority": "Medium Priority",
+    "status": "Resolved",
+    "createdAt": "2/25/2026"
+  },
+  {
+    "id": 1009,
+    "title": "App Crashes on Startup",
+    "description": "Customer’s mobile app crashes on startup. They reinstalled the app but issue still persists.",
+    "customer": "Daniel Wilson",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2/24/2026"
+  },
+  {
+    "id": 1010,
+    "title": "Email Notifications Not Received",
+    "description": "Customer is not receiving confirmation emails. They checked spam folder but no messages appear.",
+    "customer": "Nusrat Jahan",
+    "priority": "Medium Priority",
+    "status": "Closed",
+    "createdAt": "2/23/2026"
+  }
+]
