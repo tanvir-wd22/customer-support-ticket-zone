@@ -1,6 +1,6 @@
 import vector1 from '../assets/vector1.png';
 
-const Banner = () => {
+const Banner = ({ inProgessCount }) => {
   return (
     <div className="flex flex-col lg:flex-row gap-4 md:gap-6 justify-between items-center text-white w-full px-2 sm:px-0">
       {/* ============ card 01 ======================= */}
@@ -19,7 +19,7 @@ const Banner = () => {
           <p className="text-base sm:text-lg md:text-xl font-medium">
             In-Progress
           </p>
-          <p className="text-2xl sm:text-3xl font-semibold">0</p>
+          <p className="text-2xl sm:text-3xl font-semibold">{inProgessCount}</p>
         </div>
 
         {/* Right Image (flipped) */}

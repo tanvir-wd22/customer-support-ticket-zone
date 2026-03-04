@@ -1,15 +1,11 @@
-const TicketCard = ({ ticketItem }) => {
-  console.log(ticketItem);
+const TicketCard = ({ ticketItem, handleTicketCardClick }) => {
+  // console.log(ticketItem);
   const { id, title, description, customer, priority, status, createdAt } =
     ticketItem;
   return (
-    <div>
+    <div onClick={() => handleTicketCardClick(ticketItem)}>
       <div className="card bg-base-300">
         <div className="card-body">
-          {/* <div className="flex justify-between items-center">
-            <h2 className="card-title">{title}</h2>
-            <div className="badge badge-accent">{status}</div>
-          </div> */}
           <div className="flex justify-between items-center">
             <h2 className="card-title">{title}</h2>
             <div className="badge badge-accent flex items-center gap-2">
