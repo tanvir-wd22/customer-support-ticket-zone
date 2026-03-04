@@ -16,7 +16,10 @@ const ticketsPromise = fetchTickets();
 
 function App() {
   const [inProgessCount, setInProgressCount] = useState(0);
+  const [resolvedCount, setResolvedCount] = useState(0);
   const [status, setStatus] = useState([]);
+  const [resolved, setResolved] = useState([]);
+  const [cardTickets, setCardTickets] = useState([]);
 
   const handleTicketCardClick = (ticketItem) => {
     // console.log(ticketItem);
@@ -25,9 +28,22 @@ function App() {
     toast.success('Add to task status successfully');
   };
   // console.log(status);
-  const handleStatusCompleteClick = () => {
+  const handleStatusCompleteClick = (ticketItem) => {
+    // console.log(ticketItem);
+    setResolvedCount(resolvedCount + 1);
+    setInProgressCount(inProgessCount - 1);
+    setResolved([...resolved, ticketItem]);
+    const remainingStatus = status.filter(
+      (statusItem) => statusItem.id !== ticketItem.id
+    );
+    setStatus(remainingStatus);
+    const remainingCardTickets = cardTickets.filter(
+      (cardItem) => cardItem.id !== ticketItem.id
+    );
+    setCardTickets(remainingCardTickets);
     toast.success('Task status complete');
   };
+  // console.log(resolved);
 
   return (
     <>
@@ -38,7 +54,10 @@ function App() {
 
       {/*  =========== BANNER START HERE ==================== */}
       <header className="w-11/12 mx-auto mb-6 lg:mb-12">
-        <Banner inProgessCount={inProgessCount}></Banner>
+        <Banner
+          inProgessCount={inProgessCount}
+          resolvedCount={resolvedCount}
+        ></Banner>
       </header>
 
       {/*  =========== MAIN SECTION START HERE ==================== */}
@@ -49,6 +68,8 @@ function App() {
               <CustomerTickets
                 ticketsPromise={ticketsPromise}
                 handleTicketCardClick={handleTicketCardClick}
+                cardTickets={cardTickets}
+                setCardTickets={setCardTickets}
               ></CustomerTickets>
             </Suspense>
           </div>
@@ -57,7 +78,7 @@ function App() {
               status={status}
               handleStatusCompleteClick={handleStatusCompleteClick}
             ></TaskStatus>
-            <ResolvedTask></ResolvedTask>
+            <ResolvedTask resolved={resolved}></ResolvedTask>
           </div>
         </section>
       </main>

@@ -8,7 +8,7 @@ const StatusCard = ({ ticketItem, handleStatusCompleteClick }) => {
           <h2 className="text-base font-medium">{title}</h2>
           <div className="mt-2">
             <button
-              onClick={handleStatusCompleteClick}
+              onClick={() => handleStatusCompleteClick(ticketItem)}
               className="btn btn-success btn-block"
             >
               Complete

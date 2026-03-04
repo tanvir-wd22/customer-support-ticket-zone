@@ -1,10 +1,17 @@
 import ResolvedCard from './ResolvedCard';
 
-const ResolvedTask = () => {
+const ResolvedTask = ({ resolved }) => {
   return (
     <div>
       <h1 className="text-2xl font-semibold mb-3">Resolved Task</h1>
-      <ResolvedCard></ResolvedCard>
+      <div className="grid gap-3 grid-cols-1">
+        {resolved.map((ticketItem) => (
+          <ResolvedCard
+            key={ticketItem.id}
+            ticketItem={ticketItem}
+          ></ResolvedCard>
+        ))}
+      </div>
     </div>
   );
 };
