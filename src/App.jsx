@@ -6,12 +6,14 @@ import Navbar from './components/Navbar';
 import ResolvedTask from './components/ResolvedTask';
 import TaskStatus from './components/TaskStatus';
 import { toast } from 'react-toastify';
+import Loading from './components/Loading';
 
+// fetch json data from public folder using async await
 const fetchTickets = async () => {
   const res = await fetch('/fakeData.json');
   return res.json();
 };
-
+// start the fetch process and store the resulting promise
 const ticketsPromise = fetchTickets();
 
 function App() {
@@ -64,7 +66,7 @@ function App() {
       <main className="w-11/12 mx-auto mb-6 lg:mb-12">
         <section className="flex gap-6 justify-between flex-col sm:flex-row">
           <div>
-            <Suspense>
+            <Suspense fallback={<Loading></Loading>}>
               <CustomerTickets
                 ticketsPromise={ticketsPromise}
                 handleTicketCardClick={handleTicketCardClick}
