@@ -25,9 +25,13 @@ function App() {
 
   const handleTicketCardClick = (ticketItem) => {
     // console.log(ticketItem);
-    setInProgressCount(inProgessCount + 1);
-    setStatus([...status, ticketItem]);
-    toast.info('Add to task status successfully');
+    if (status.find((ticketElement) => ticketElement.id === ticketItem.id)) {
+      toast.warning('Already added to task status');
+    } else {
+      setInProgressCount(inProgessCount + 1);
+      setStatus([...status, ticketItem]);
+      toast.info('Add to task status successfully');
+    }
   };
   // console.log(status);
   const handleStatusCompleteClick = (ticketItem) => {

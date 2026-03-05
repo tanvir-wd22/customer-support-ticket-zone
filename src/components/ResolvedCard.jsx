@@ -1,6 +1,6 @@
 const ResolvedCard = ({ ticketItem }) => {
   const { title } = ticketItem;
-  
+
   return (
     <div>
       <div className="card bg-base-300 shadow-sm">

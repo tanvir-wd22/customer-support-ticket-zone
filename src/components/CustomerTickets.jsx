@@ -11,7 +11,7 @@ const CustomerTickets = ({
   const tickets = use(ticketsPromise);
   //   console.log(tickets);
 
-  // ========= manage state from parent componet ===========
+  // ========= manage state from App parent componet ===========
   useEffect(() => {
     setCardTickets(tickets);
   }, [tickets, setCardTickets]);
